@@ -19,8 +19,8 @@ body {
     border-radius: 15px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     position: relative;
-    border: 2px solid #3498db; /* Border color */
-    animation: borderGlow 2s infinite alternate;
+    border: 3px solid #3498db;
+    overflow: hidden;
 }
 
 .container::before {
@@ -31,10 +31,10 @@ body {
     right: -10px;
     bottom: -10px;
     border-radius: 15px;
-    border: 2px solid #3498db; /* Glowing border color */
-    box-shadow: 0 0 30px #3498db;
+    border: 3px solid #3498db;
+    box-shadow: 0 0 20px #3498db;
     z-index: -1;
-    animation: borderGlow 2s infinite alternate;
+    animation: borderGlow 1.5s infinite alternate;
 }
 
 @keyframes borderGlow {
@@ -42,7 +42,7 @@ body {
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     }
     to {
-        box-shadow: 0 0 30px #3498db;
+        box-shadow: 0 0 25px #3498db;
     }
 }
 
